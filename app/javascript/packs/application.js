@@ -10,6 +10,7 @@ require("channels")
 require('jquery')
 
 require('posts/style')
+require('posts/modal')
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -18,3 +19,6 @@ require('posts/style')
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+import 'bootstrap';
+import '../stylesheets/application';
