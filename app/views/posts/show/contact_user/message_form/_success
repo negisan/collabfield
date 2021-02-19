@@ -1,0 +1,5 @@
+$('.contact-user').replaceWith('\
+  <div class="contact-user">\
+    <div calss="contacted-user">Message has been sent</div>\
+  </div>
+')

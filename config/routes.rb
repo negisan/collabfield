@@ -7,6 +7,15 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :private do
+    resources :conversations, only: [:create] do
+      member do
+        post :close
+      end
+    end
+    resources :messages, only: [:index, :create]
+  end
+
   devise_scope :user do
     get 'login', to: 'devise/sessions#new'
   end
