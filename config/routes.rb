@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :contacts, only: [:create, :update, :destroy]
+
   resources :posts do
     collection do
       get 'hobby'
